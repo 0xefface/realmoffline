@@ -1,0 +1,50 @@
+player inventory can hold containers, 
+these containers can also hold containers.
+
+We have different types of containers
+
+The players inventory is a type of container
+backpacks, pouches, eggs, gift boxes are items
+that can be in a players inventory that are
+also types of containers.
+
+Rooms are containers for items/Npc's
+and those items and npc's are also
+a type of container, as all worn
+items on a npc loads when the room does.
+
+House chests type of container
+
+Loot chests also a type
+
+PlayerInventory ->
+
+item has a extra value, a enum for type
+if marked as a container it needs a extra id
+// Types
+weapon -> Weapon Types
+Armor -> Armor Types
+Baldric -> all same type ?
+Containers - > diff containers
+Jewlery -> rings ammies belts
+Books -> spell or skill
+Tools -> 
+Decoration
+Materials
+Currency
+
+
+
+
+
+PlayerContainers // Item in the player inventory will be marked as a container type with 
+a backpack ID, 
+
+
+HouseContainers
+
+
+NpcInventory
+NpCContainers
+
+RoomContainers // by room id

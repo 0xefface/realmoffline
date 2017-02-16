@@ -1,0 +1,4 @@
+D:\Projects\scitest\Built\Debug\SCI32.dll
+D:\Projects\scitest\Built\Debug\SCI32.pdb
+D:\Projects\scitest\SCI32\obj\Debug\SCI32.dll
+D:\Projects\scitest\SCI32\obj\Debug\SCI32.pdb

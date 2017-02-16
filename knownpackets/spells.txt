@@ -1,0 +1,22 @@
+
+WorldServer::Unknown Packet ID (41)
+18-00-00-00-29-00-00-00-00-00-02-00-FF-FF-FF-FF-01-EE-00-FE-00-01-FF-00-00-00-00
+-00-00-00-00-00
+WorldServer::Unknown Packet ID (32)
+10-00-00-00-20-00-00-00-80-D1-F0-08-E2-2B-80-D1-F0-08-00-00-00-00-00-00
+
+
+// Greater heal
+// When you click a spell client sends this
+
+WorldServer::Unknown Packet ID (145)
+20-00-00-00-
+91-00-00-00-
+
+16-00-00-00-0A-00-33-00-2D-00-0B-00-0A-00-2C-00-56-00-65
+-00-05-00-4B-00-39-00-00-00-00-00-00-00
+
+When you choose a target and cast it, client sends this
+WorldServer::Unknown Packet ID (80)
+14-00-00-00-50-00-00-00-56-00-00-00-02-00-00-00-02-00-00-00-00-00-00-00-00-00-00
+-00

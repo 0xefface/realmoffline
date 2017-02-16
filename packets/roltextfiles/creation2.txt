@@ -1,0 +1,27 @@
+Reply from creation2 : 
+18-00-00-00-
+3B-00-00-00-
+
+E4-14-02-00- // Start
+
+00- race
+00- head
+00- chin
+01- Hair part
+00- brow
+00- eye
+00- nose
+00- // ears
+00- // mouth
+00- // fce hair
+
+
+01- // Skin Color
+00 // hair color
+00 // eye color
+
+00-00-00- // Padding to make multiple of 4
+
+
+
+00-00-00-00 // bs crc

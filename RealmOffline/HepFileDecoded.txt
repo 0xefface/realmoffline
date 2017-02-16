@@ -1,0 +1,5 @@
+all files begin with
+
+91 00 // file header
+
+00 00 / length of the data total in file.

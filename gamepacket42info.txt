@@ -1,0 +1,10 @@
+Armor
+Weapon
+Jewlery
+Edible (Food)
+Books (Skill and spell)
+Containers
+Usable(Dyes, Potions, Scrolls, etc)
+
+88500018
+12259

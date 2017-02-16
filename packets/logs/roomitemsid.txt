@@ -1,0 +1,62 @@
+728 - The room chest, passworded
+729 Open Door fcing SE
+730 Open Door fcing SE
+same until 732
+
+733 Open door with no door, facing SE
+734 half burnt door facing SE
+.
+736 Chair SE
+737 Stool
+740 Endtable
+741 endtable with dafodil
+742 Barrell
+
+
+Doors have a game id
+they lead to specific places.
+These are probably going to have to be static
+and removed from use by players like roomnumbers
+
+
+Backpacks and chests.
+Cant put containers with items, in items, well we could
+but it would be confusing.
+
+Backpacks will have a sqlid, this wont change, and a ownersqlid which can by trading
+change, 
+Chests will have a sqlid and a sqlownerid that should never change,
+only the id's of the items in the chest.
+items in chest should be owned by the chest sqlid ? the chest sql owned by player - yes
+has to be, or all items will try and load into inventory.
+
+Rooms need to save items too, bedrooms do, those should not disappear on relog.
+These items are chairs, beds, animation, chests, doors and any other game item.
+
+So, should any item dropped into a room have a destroy timer ? besides house.
+then all items always stay unless the destory timer tick is told to start ?
+
+
+
+
+10000 = You cant do that right now.
+10001 = Thats already been done.
+10002 = There is no space for that.
+10003 = You have to remove something first.
+10004 = You cant open the door because it is locked.
+10005 = You cant go there.
+10006 = That did'nt work.
+10007 = You cant open the door because it is locked.
+10008 = That key will not work in this lock.
+10009 = NAK recieved 1009
+10010 = This is a redendent define.
+10011 = Your character type cannot wear that
+10012 = It's too bulky.
+10013 = You cannot open that door, that door will open when the last person in dungeon has left.
+10014 = The door is strangly sealed and will not open.
+10015 = You cant do that.
+10016 = Someelse is busy with that right now.
+10017 = Thats the wrong password.
+10018 = You cant do anything to it.
+10019 = That wouldnt make much sense.
+

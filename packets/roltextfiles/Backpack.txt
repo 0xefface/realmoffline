@@ -1,0 +1,20 @@
+Backpack
+
+0x01, 
+0xE2, 0x00, // Backpack Icon
+0x92, 0xAC, 0x04, 0x00, // game ID
+0x4A, 0x00, // color of backpack
+0x00, // uses base name
+0x20, // this is spell id for Identify, or Greater i do not recall, this item has been identified
+0xFF, // End of Enchants
+0x00, // unknown
+0x00, // not in a room no room location
+0x01, // this is an equipable item
+0x00, // it is not currently equiped
+0x00, // unknown
+0x00, 0x00, // i think for containers this is how many items inside this item
+// if we only give data up to this point, and ignore the 2 int's below
+// i can still summon the item in game
+
+0x00, 0x00, 0x00, 0x00, // Unknown
+0x00, 0x00, 0x00, 0x00, // Unknown

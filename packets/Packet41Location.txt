@@ -1,0 +1,17 @@
+18-00-00-00 // 24 in length
+29-00-00-00 // packet id 41
+01-00 ? // charid
+02-00 ? // this needs to be the same number for this char for everything.
+17-27-00-00 // room number 10007
+
+00 // Seperator
+
+53-01 
+e6-00 
+
+00 // seperator
+53 01
+e6 00
+
+FF 00 //FF EOF
+00-00-00-00 // blank crc

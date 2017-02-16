@@ -1,0 +1,54 @@
+1 Your hands seem cooler.
+2 Your hands seem warmer.
+3 Your hands feel less charged.
+4 Your hands looks less acidic.
+5 Your hands look less poisonous.
+17 Your  sensitivity to invisible objects lessen.
+23 You feel less warm.
+31 You feel as though you can flee now.
+33 You feel less likely to go berzerk.
+36 You feel less afraid.
+39 You feel less strong.
+40 You feel less weak.
+41 You feel your shield dissapate.
+42 You feel your greater shield dissapate.
+43 You feel your invun shield dissapate.
+44 you feel less regenerative.
+49 You hands look less acidic.
+56 You feel less aggresive.
+57 You feel less defensive.
+59 Your magical nimbility is lessened.
+60 Your magical clumsiness is lessened.
+61 Your magical intelligence is lessened.
+62 Your magical stupidity is lessened.
+63 Your magical health is lessened.
+64 Your magical health problems are lessened.
+77 You feel less ill.
+
+
+// Other way from /app / back removes the effect
+98 changes hair color to black
+
+97 Changes hair color to white
+96 changes body color to grey
+95 changes body to off orange
+94 changes body to green
+93 changes body to grey
+92 changes hair to grey
+91 changes body to grey and pink glow
+90 changes body green grey
+89 changes hair to black redish, cool
+88 changes hiar to white green
+87 dont know
+86 dont know
+76 did something. couldnt see
+70 gives ugly mouth
+21 makes you invisible.
+18 makes you invisible
+17 see invis
+
+Dyeing colors
+0 = natural brown
+1 off brown
+2 light brown
+

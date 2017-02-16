@@ -1,0 +1,378 @@
+{ 0x64, 0x01, 0x00, 0x00, 
+0x19, 0x00, 0x00, 0x00, 
+                                        
+0xD4, 0x9E, // Player id maybe ?
+
+// Start of packet
+0x02, 0x00, 0x00, 0x00, 
+0x00, 0x00, 
+// End start block                                        
+
+0x3A, 0x00, 0x00, 0x00, 
+
+0x00, 0x00, 0x00, 0x00, 
+                                        
+0x9E, // ??
+
+// Stats with bonuses added
+0x12, // Str
+0x06, // Dex
+0x0A, // Int
+0x0E, // End
+
+0x67, 0x95, 0x98, 0x05, // Gold 93885799
+0x67, 0x95, 0x98, 0x00, // Mana 9999719
+
+0xAF, 0x06, // Level
+
+0x00, // Alignment 00 = demonic  80 =  neut
+                                        
+
+0xAB, 0x26, 0x00, 0x00, // Current hp
+
+0xCC, 0x36, 0x00, 0x00, // Total hp
+                                        
+
+
+0x01, 0x00, // Title Length
+0x41, // this is A
+
+0x80, 0x00, 0x00, 0x00, // Current Xp
+
+0x00, 0x00, 0x00, 0x00, // dunno
+
+0x00, 0x00, 0x00, 0x00, // dunno
+
+0x00, 0x00, 0x00, 0x00, // dunno
+
+0x00, 0x00, 0x00, 0x00, // dunno
+
+// Skills
+0x16, // Short Sword
+0x16, // Long sword
+0x16, // 2hand
+0x16, // dagger
+0x16, // axe
+0x16, // club
+0x16, // mace
+0x16, // unarmed
+0x16, // Throwing
+0x16, // Acro
+0x16, // Maul
+0x16, // Sorc
+0x16, // Elem
+0x16, // Myst
+0x16, // Thaum
+0x16, // Necroman
+cy
+0x16, // Thuer
+0x16, // Alchemy 
+0x16, // Weaponsmith
+0x16, // Armoursmith
+
+// WTF steve !! why are you randomly placing bytes that dont mean shit in the middle of skills ?
+0x00, 0x00, 0x00, 0x00, 0x00, // Dunno 
+
+// Rest of skills
+0x16, // Pickpocketing
+0x16, // Disarm Traps
+0x16, // Lockpicking 
+0x16, // Meditation
+0x16, // Crit strike
+0x16, // Shield Usage
+0x16, // Crafting
+
+
+// Yeah i have no clue what all this crap is, looks like off or on switches found everything except for Max Level
+// I hope these are known spells, must be a client limit on spells then
+
+// Sorcery
+0x01, // Home Spell
+0x01, // Killstar
+0x01, // Unlock 
+0x01, // Dispell magic
+0x01, // Engrave
+0x01, // Multiblade 
+0x01, // Gather the fellowship
+0x01, // Cornicopia
+0x01, // Cloud of Fog
+0x01, // Improve Armour
+0x01, // Teleport
+0x01, // Extention
+0x01, // Invisibility - see
+0x01, // Shift
+0x01, // Invisibility
+0x01, // Teleport Combat
+0x01, // Teleport-Group
+0x01, // Permanency
+0x01, // Rust
+0x01, // Defensslessness
+0x01, // Invisibility-Improved 
+0x01, // Enchant Item 
+0x01, // Mass Rust
+0x01, // Elphames Justice
+
+// Elementalism
+0x01, // Fire Grasp
+0x01, // Flame Orb
+0x01, // Artic Grasp
+0x01, // Ice Orb
+0x01, // Earth Spike 
+0x01, // Incinerate 
+0x01, // Gust of Wind 
+0x01, // Immolation 
+0x01, // Dancing Flame 
+0x01, // Flame Blade 
+0x01, // Electric Charge 
+0x01, // Cold Steel 
+0x01, // Sandstorm 
+0x01, // Spark 
+0x01, // Ice Storm 
+0x01, // Freezing Wind
+0x01, // Hurricane
+0x01, // Crawling Charge
+0x01, // Stoning
+0x01, // Fireball 
+0x01, // Lightning Bolt 
+0x01, // Freeze 
+0x01, // Crushing Boulder
+0x01, // Electric Fury 
+0x01, // Cold Snap
+0x01, // EarthQuake
+0x01, // Despothes Wrath
+
+// Mysticism
+0x01, // Hold Monster
+0x01, // Fumble 
+0x01, // Psychic Orb 
+0x01, // Confusion 
+0x01, // Forget 
+0x01, // Mind Shackle 
+0x01, // Identify 
+0x01, // Berserk
+0x01, // Stun 
+0x01, // Loyalty Shift 
+0x01, // Warp Mind 
+0x01, // Etherealize 
+0x01, // Spell Blast 
+0x01, // Mass Hold 
+0x00, // ????? 
+0x01, // Mass Fumble
+0x01, // Fear 
+0x01, // Iron Chains 
+0x01, // Mass Berserk 
+0x01, // Mass Stun 
+0x01, // Mass Loyalty Shift
+0x01, // Mabons Forced Flee 
+0x01, // Illusionary Foe 
+0x01, // Anti Magic Aura
+
+// Thaumaturgy
+0x01, // Light Dart 
+
+// Necromancy , Why here ? gah !
+0x01, // Curse Of Clumsy
+
+// k back to Thaumaturgy 
+0x01, // Nimbility 
+0x01, // Empower 
+
+// Necromancy , Why here ? gah !
+0x01, // Enfeeble
+
+// k back to Thaumaturgy 
+0x01, // Missle Resistance 
+0x01, // Heal
+0x01, // Summon pixe
+0x01, // Purify 
+0x01, // Cure Poison 
+0x00, // ??? 
+0x01, // Heal Greater
+0x01, // Remove Curse 
+0x01, // Summon Fairy 
+
+// Necromancy , Why here ? gah !
+0x01, // Curse Fire
+0x01, // Curse Cold 
+0x01, // Curse Electric 
+
+// k back to Thaumaturgy 
+0x01, // Shield 
+0x01, // Shield Greater 
+0x01, // Wrath of the gods 
+0x01, // Fire Shield 
+0x01, // Cold Shield 
+0x01, // Lightning Shield 
+0x01, // Summon Nymph 
+0x01, // Regeneration 
+0x01, // Indestruction 
+0x01, // Invul 
+0x01, // Enids Blessing 
+0x01, // Banishment 
+0x01, // Summon Fairy Queen 
+
+// Necromancy 
+0x01, // Acid Sphere 
+0x01, // Venomous Touch 
+0x00, // ???? 
+0x01, // Poison Bolt 
+0x00, // ??? 
+0x01, // Drain Life 
+0x01, // Acid Cloud  
+0x01, // Summon Zombie 
+0x01, // Venom 
+0x01, // Summon Undead
+0x01, // Acid Rain  
+0x01, // Night friends 
+0x01, // Steal Life 
+0x00, // ????? 
+0x01, // Summon Doppleganger 
+0x01, // Death Touch 
+0x01, // Banish 
+0x01, // Shadow Warrior 
+0x01, // Summon Deamon 
+0x01, // Duachs Vengence 
+0x01, // Death Wish 
+0x01, // Mass Drain
+0x01, // Curse Poison 
+0x01, // Curse Acid 
+
+
+// k back to Thaumaturgy
+0x01, // Poison Shield
+0x01, // Acid Shield 
+
+// Elem
+0x01, // Head of Death
+
+/ Sorcery
+0x01, // Identify Greater 
+0x01, // Summon Monster I
+0x01, // Summon Monster II 
+0x01, // Summon Monster III
+
+/Elem
+0x01, // Summon Ratling 
+0x01, // Summon Bat 
+0x01, // Summon Fenris 
+0x01, // Summon Imp 
+0x01, // Summon Ogre  
+0x01, // Summon Troll
+0x01, // Summon Seraph 
+0x00, // ???? 
+0x00, // ???? 
+0x00, // ???? 
+0x00, // ???? 
+0x00, // ????
+
+// k back to Thaumaturgy
+0x01, // Heal Mass
+0x00, // ???? 
+
+// Affects
+0x00, // Unarmed Attack - Fire
+0x00, // Unarmed Attack - Cold
+0x00, // Unarmed Attack - Lightning
+0x00, // Unarmed Attack - Acid
+0x00, // Unarmed Attack - Poison 
+0x00, // ???? 
+0x00, // ???? 
+0x00, // Unarmed Attack - Exp Drain
+0x00, // Unarmed Attack - Exp Steal
+0x00, // Unarmed Attack - Life Steal 
+0x00, // Unarmed Attack - Rust 
+0x00, // Can Hit Etheral 
+0x00, // Unarmed Attack - Stun 
+0x00, // ???? 
+0x00, // ???? 
+0x00, // Improved Unarmed Attack Damage 
+0x00, // Can See invis 
+0x00, // Invisible turns char transparent 
+0x00, // ???? 
+0x00, // Defenseless 
+0x00, // Invisible turns char transparent
+0x00, // ???? 
+0x00, // Fire Immolated 
+0x00, // Cold Immolated
+0x00, // Acid Immolated 
+0x00, // Poison Immolated 
+0x00, // Lightning Immolated 
+0x00, // Frozen 
+0x00, // Held 
+0x00, // Confused 
+0x00, // Unable to flee comabat 
+0x00, // ???? 
+0x00, // Berzerked 
+0x00, // Stunned 
+0x00, // ???? 
+0x00, // Scared
+0x00, // Quickened 
+0x00, // Slowed 
+0x00, // Empowered
+0x00, // Enfeebled 
+0x00, // Shielded 
+0x00, // Shielded 
+0x00, // Invul 
+0x00, // Regenerating 
+0x00, // ????
+0x00, // Cursed 
+0x00, // Rotting in Jail 
+0x00, // Resistant to Magic 
+0x00, // Immune to Magic 
+0x00, // Rust Immolated
+0x00, // ???? 
+0x00, // ???? 
+0x00, // Resurrecting (25) 
+0x00, // Resurrecting (50) 
+0x00, // Resurrecting (100)  
+0x00, // Extra Attack 
+0x00, // Extra Dodge
+0x00, // Spell memory Protected
+0x00, // Heightened Dexterity
+0x00, // Lowered Dexterity
+0x00, // Heightened Intelligence
+0x00, // Lowered Intelligence
+0x00, // Heightened Endurance
+0x00, // Lowered Endurance
+0x00, // Retention
+0x00, // Vulnerable
+0x00, // Nourised
+0x00, // Changed Gender
+0x00, // Naked
+0x00, // Ugly
+0x00, // Disguised
+0x00, // Encumberance Bonus
+0x00, // Encumberance Penalty
+0x00, // ???? 
+0x00, // Shifting
+0x00, // Spell Extention 
+0x00, // Poisoned
+0x00, // Acid Burned
+0x00, // ????
+0x00, // ???? 
+0x00, // ????
+0x00, // ???? 
+0x00, // ????
+0x00, // ????
+0x00, // Protected from Death Magic
+0x00, // Magical Will Increase
+0x00, // ????
+0x00, // ???? 
+0x00, // ???? 
+0x00, // ???? 
+0x00, // ???? 
+0x00, // ????
+0x00, // ???? 
+0x00, // ????
+0x00, // ???? 
+0x00, // ????
+0x00, // ????
+0x00, // ????
+0x00, // ????
+                                        
+0x90, 0x05, // Build points
+0x00, 0x00, // Dont know
+
+0x01, 0x00, 0x0A, 0x30, // Dunno
+                                        
+                                        0x00, 0x00, 0x00, 0x00 };

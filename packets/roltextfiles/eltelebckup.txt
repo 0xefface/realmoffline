@@ -1,0 +1,21 @@
+// No items with black key show here
+// 100 - 6167
+
+0x02, 0x0B, // dunno at all
+
+0x80, 0xD1, 0xF0, 0x08, // room number
+
+0xAC, 0x0D, // The background picture (Starts at 3000)
+0x00, 0x0F, // end background
+
+0x02, 0x00, 
+
+0x01, // Items in room, must be at least 1 (And must be correct or will not load room)
+
+// Start Room Items
+0x64, 0x00, 
+0xBB, 0x01, // at location X
+
+0x1A, 0x01, // At location Y
+
+0x00, 0x00, 

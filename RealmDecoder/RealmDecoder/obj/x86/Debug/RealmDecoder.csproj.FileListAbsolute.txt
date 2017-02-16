@@ -1,0 +1,8 @@
+C:\Users\dcosper\Desktop\RealmOfflineGit\realmoffline\RealmDecoder\RealmDecoder\bin\Debug\RealmDecoder.exe
+C:\Users\dcosper\Desktop\RealmOfflineGit\realmoffline\RealmDecoder\RealmDecoder\bin\Debug\RealmDecoder.pdb
+C:\Users\dcosper\Desktop\RealmOfflineGit\realmoffline\RealmDecoder\RealmDecoder\obj\x86\Debug\RealmDecoder.csprojResolveAssemblyReference.cache
+C:\Users\dcosper\Desktop\RealmOfflineGit\realmoffline\RealmDecoder\RealmDecoder\obj\x86\Debug\RealmDecoder.Form1.resources
+C:\Users\dcosper\Desktop\RealmOfflineGit\realmoffline\RealmDecoder\RealmDecoder\obj\x86\Debug\RealmDecoder.Properties.Resources.resources
+C:\Users\dcosper\Desktop\RealmOfflineGit\realmoffline\RealmDecoder\RealmDecoder\obj\x86\Debug\RealmDecoder.csproj.GenerateResource.Cache
+C:\Users\dcosper\Desktop\RealmOfflineGit\realmoffline\RealmDecoder\RealmDecoder\obj\x86\Debug\RealmDecoder.exe
+C:\Users\dcosper\Desktop\RealmOfflineGit\realmoffline\RealmDecoder\RealmDecoder\obj\x86\Debug\RealmDecoder.pdb

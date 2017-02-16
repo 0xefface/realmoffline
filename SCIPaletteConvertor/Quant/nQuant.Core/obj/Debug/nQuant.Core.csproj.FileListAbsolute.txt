@@ -1,0 +1,14 @@
+c:\nQuant\nQuant\nQuant\obj\Debug\ResolveAssemblyReference.cache
+c:\nQuant\nQuant\nQuant\bin\Debug\nQuant.Core.dll
+c:\nQuant\nQuant\nQuant\bin\Debug\nQuant.Core.pdb
+c:\nQuant\nQuant\nQuant\obj\Debug\nQuant.Core.dll
+c:\nQuant\nQuant\nQuant\obj\Debug\nQuant.Core.pdb
+C:\nQuant\nQuant.Core\bin\Debug\nQuant.Core.dll
+C:\nQuant\nQuant.Core\bin\Debug\nQuant.Core.pdb
+C:\nQuant\nQuant.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\nQuant\nQuant.Core\obj\Debug\nQuant.Core.dll
+C:\nQuant\nQuant.Core\obj\Debug\nQuant.Core.pdb
+C:\Users\dcosper\Documents\Visual Studio 2015\Projects\SCI32ResourceManipulator\Quant\nQuant.Core\bin\Debug\nQuant.Core.dll
+C:\Users\dcosper\Documents\Visual Studio 2015\Projects\SCI32ResourceManipulator\Quant\nQuant.Core\bin\Debug\nQuant.Core.pdb
+C:\Users\dcosper\Documents\Visual Studio 2015\Projects\SCI32ResourceManipulator\Quant\nQuant.Core\obj\Debug\nQuant.Core.dll
+C:\Users\dcosper\Documents\Visual Studio 2015\Projects\SCI32ResourceManipulator\Quant\nQuant.Core\obj\Debug\nQuant.Core.pdb

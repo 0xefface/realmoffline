@@ -1,0 +1,181 @@
+public void WriteToPacket(RealmMessageWriter writer)
+        {
+            writer.WriteByte(1);
+            writer.WriteU16(classId);
+            writer.WriteU32(objId);
+
+            if (GetBase<BCharacter>() == null)
+            {
+                writer.WriteU16(color);
+            }
+
+            writer.WriteByte(name.Length > 0);
+            if (name.Length > 0)
+            {
+                writer.WriteString(name);
+            }
+
+            foreach (byte a in affectedState)
+            {
+                writer.WriteByte(a);
+            }
+            writer.WriteByte(0xFF);
+
+			// if this is gold or mana
+            if(value == 0)
+            {
+                writer.WriteByte(0);
+            }
+            else if (value < 0xFFFF)
+            {
+                writer.WriteByte(1);
+                writer.WriteU16((ushort)value);
+            }
+            else
+            {
+                writer.WriteByte(2);
+                writer.WriteU32(value);
+            }
+
+            BCharacter bcharacter = GetBase<BCharacter>();
+            if (bcharacter != null)
+            {
+                writer.WriteByte(bcharacter.xSpeed);
+                writer.WriteByte(bcharacter.ySpeed);
+                writer.WriteByte(bcharacter.width);
+                writer.WriteByte(bcharacter.height);
+
+                writer.WriteByte(bcharacter.profession);
+                writer.WriteByte(bcharacter.race);
+                writer.WriteByte(bcharacter.sex);
+                writer.WriteString(bcharacter.name);
+                writer.WriteByte(bcharacter.peaceful);
+                writer.WriteU16((ushort)bcharacter.health);
+                writer.WriteU16((ushort)bcharacter.healthMax);
+            }
+
+            if (room == null)
+            {
+                writer.WriteByte(0);
+            }
+            else
+            {
+                ObjectRoomInfo objRoomInfo = room.objectRoomInfo[this];
+
+                byte roomStatus = 0;
+
+                if (!objRoomInfo.doScaler)
+                {
+                    roomStatus |= 0x10;
+                }
+
+                uint roomId = room.id;
+
+                if (roomId <= 0xFFFF)
+                {
+                    roomStatus |= 0x01;
+                }
+                else
+                {
+                    roomStatus |= 0x02;
+                }
+
+                writer.WriteByte(roomStatus);
+
+                if (roomId <= 0xFFFF)
+                {
+                    writer.WriteU16((ushort)room.id);
+                }
+                else
+                {
+                    writer.WriteU32(room.id);
+                }
+
+                writer.WriteU16(objRoomInfo.x);
+                writer.WriteU16(objRoomInfo.y);
+                writer.WriteByte(objRoomInfo.facing);
+            }
+
+            BCarryable bcarryable = GetBase<BCarryable>();
+            if (bcarryable != null)
+            {
+                writer.WriteByte(bcarryable.visible);
+            }
+
+            BWeapon bweapon = GetBase<BWeapon>();
+            BHead bhead = GetBase<BHead>();
+            BWearable bwearable = GetBase<BWearable>();
+            if(bweapon != null)
+            {
+                writer.WriteByte(bweapon.isWorn);
+            }
+            else if (bhead != null)
+            {
+                writer.WriteByte(bhead.race);
+                writer.WriteByte(bhead.sex);
+                writer.WriteByte(bhead.head);
+                writer.WriteByte(bhead.hair);
+                writer.WriteByte(bhead.brow);
+                writer.WriteByte(bhead.eye);
+                writer.WriteByte(bhead.nose);
+                writer.WriteByte(bhead.ear);
+                writer.WriteByte(bhead.mouth);
+                writer.WriteByte(bhead.beard);
+                writer.WriteByte(bhead.skinColor);
+                writer.WriteByte(bhead.hairColor);
+                writer.WriteByte(bhead.eyeColor);
+            }
+            else if (bwearable != null)
+            {
+                writer.WriteByte(bwearable.isWorn);
+            }
+
+            BDescribed bdescribed = GetBase<BDescribed>();
+            if (bdescribed != null)
+            {
+                writer.WriteByte(bdescribed.isBook);
+            }
+            else
+            {
+                writer.WriteByte(0);
+            }
+
+            BContainer bcontainer = GetBase<BContainer>();
+            if (bcontainer != null)
+            {
+                ushort itemCount = (ushort)bcontainer.items.Count;
+                writer.WriteU16(itemCount);
+
+                foreach (WorldObject containedObj in bcontainer.items)
+                {
+                    containedObj.WriteToPacket(writer);
+                }
+            }
+
+            BOpenable bopenable = GetBase<BOpenable>();
+            if (bopenable != null)
+            {
+                writer.WriteByte(bopenable.isOpen);
+            }
+
+            BSwitch bswitch = GetBase<BSwitch>();
+            if (bswitch != null)
+            {
+                writer.WriteByte(bswitch.switchState);
+            }
+
+            byte lockState = 0;
+            writer.WriteByte(lockState);
+
+            byte sitState = 0;
+            writer.WriteByte(sitState);
+
+            BTalk btalk = GetBase<BTalk>();
+            writer.WriteByte(btalk != null);
+
+            writer.WriteByte(invisible);
+
+            byte combatState = 0;
+            writer.WriteByte(combatState);
+        }
+}

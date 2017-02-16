@@ -1,0 +1,4 @@
+﻿http://www.winpcap.org/
+
+Download and install WinPcap.
+Then you must run the program as admin to access your network cards.

@@ -1,0 +1,49 @@
+
+
+[{Realm World Server}] fight 8 22 5 5
+We got STR:(8) DEX:(22) CS:(5) Wep:(5)
+We start with 40% for Attacker and 39% for opponent.
+
+
+with 21 str 12 dex 4 cs 5 wep skill
+We start with 42% for Attacker and 39% for opponent.
+
+15 str 14 dex 5 5
+We start with 39% for Attacker and 39% for opponent.
+
+
+// Remove block chance same attacker chance
+
+ 8 22 5 5
+We start with 42% for Attacker and 34% for opponent.
+
+21 12 4 5
+We start with 39% for Attacker and 34% for opponent.
+
+15 14 5 5
+We start with 39% for Attacker and 34% for opponent.
+
+
+
+Combat example first stats 42% attacker 39% oppen
+
+Attacker runs up smacks mob, he clearly gets a critical strike
+now the critical strike drops 5%, he used it.
+
+37% vs 39% now
+round 2, yeah now the mob dodges, or blocks, he loses 5% for
+a dodge, 3% for a block, lets say he just dodged. (-1 dogde 4 left for round)
+
+
+37% vs 34% now
+
+Again attacker has the advantage, and it continues until 
+all blocks or dodges or attacks are used.
+
+buffs for stats will be factored in, extra spells/item bonuses
+etc can be factored in.
+
+Next round we begin again. 
+
+
+Yeah needs some work, but i think it is a solid idea.
